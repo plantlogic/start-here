@@ -30,7 +30,7 @@ services:
     networks:
       database:
         aliases:
-        - userdb
+          - userdb
     volumes:
       - ./userdb:/data/db
 
