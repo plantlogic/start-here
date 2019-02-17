@@ -20,7 +20,7 @@ services:
     depends_on:
       - userdb
     networks:
-      database:
+      usernet:
       gateway:
         aliases:
           - userservice
@@ -28,7 +28,7 @@ services:
     image: 'mongo:4'
     restart: always
     networks:
-      database:
+      usernet:
         aliases:
           - userdb
     volumes:
@@ -36,4 +36,4 @@ services:
 
 networks:
   gateway:
-  database:
+  usernet:
