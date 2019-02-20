@@ -35,7 +35,27 @@ services:
           - userdb
     volumes:
       - ./userdb:/data/db
+  dataservice:
+    image: 'plantlogic/data-service:latest'
+    restart: always
+    depends_on:
+      - datadb
+    networks:
+      datanet:
+      gateway:
+        aliases:
+          - dataservice
+  datadb:
+    image: 'mongo:4'
+    restart: always
+    networks:
+      datanet:
+        aliases:
+          - datadb
+    volumes:
+      - ./datadb:/data/db
 
 networks:
   gateway:
   usernet:
+  datanet:
