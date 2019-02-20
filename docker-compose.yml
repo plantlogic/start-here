@@ -7,6 +7,8 @@ services:
     - "80:80"
     networks:
       gateway:
+    depends_on:
+      - userservice
     environment:
       - REDIRECT_URL=plantlogic.org
       - FRONTEND_URL=demo.plantlogic.org
