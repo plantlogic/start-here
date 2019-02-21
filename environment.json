@@ -1,5 +1,5 @@
 {
-    "name": "${APP_NAME}",
+    "AppName": "${APP_NAME}",
     "ApiUrl": "${API_URL}",
     "production": true
 }
