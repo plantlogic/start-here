@@ -10,10 +10,9 @@ services:
     depends_on:
       - userservice
     environment:
-      - APP_NAME=PlantLogic
-      - REDIRECT_URL=plantlogic.org
-      - FRONTEND_URL=demo.plantlogic.org
-      - API_URL=demo-api.plantlogic.org
+      - APP_NAME=
+      - REDIRECT_URL=
+      - APP_URL=
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/site.template
       - ./environment.json:/etc/nginx/conf.d/environment.template
@@ -24,6 +23,14 @@ services:
     restart: always
     depends_on:
       - userdb
+    environment: 
+      - APP_NAME=
+      - SMTP_HOST=
+      - SMTP_PORT=587
+      - SMTP_FROM=
+      - SMTP_USERNAME=
+      - SMTP_PASSWORD=
+      - SMTP_TLS=true
     networks:
       usernet:
       gateway:
