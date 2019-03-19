@@ -1,4 +1,4 @@
-[![Issues](https://img.shields.io/github/issues/plantlogic/start-here.svg?style=flat)](https://github.com/plantlogic/start-here/issues) [![License](https://img.shields.io/github/license/plantlogic/start-here.svg?style=flat)](https://github.com/plantlogic/start-here/blob/master/LICENSE) [![Demo](https://img.shields.io/badge/demo-live-success.svg)](https://demo.plantlogic.org)
+[![Issues](https://img.shields.io/github/issues/plantlogic/start-here.svg?style=flat)](https://github.com/plantlogic/start-here/issues) [![License](https://img.shields.io/github/license/plantlogic/start-here.svg?style=flat)](https://github.com/plantlogic/start-here/blob/master/LICENSE) [![Demo](https://img.shields.io/badge/demo-live-success.svg)](https://demo.plantlogic.org) [![pullreminders](https://pullreminders.com/badge.svg)](https://pullreminders.com?ref=badge)
 # 🌱 PlantLogic | Start Here
 
 | Service  | Status |
