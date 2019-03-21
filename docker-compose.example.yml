@@ -9,6 +9,7 @@ services:
       gateway:
     depends_on:
       - userservice
+      - dataservice
     environment:
       - APP_NAME=
       - REDIRECT_URL=
