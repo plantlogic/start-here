@@ -35,6 +35,9 @@ services:
       - SMTP_TLS=true
     networks:
       usernet:
+      authnet:
+        aliases:
+          - userservice
       gateway:
         aliases:
           - userservice
@@ -54,6 +57,7 @@ services:
       - datadb
     networks:
       datanet:
+      authnet:
       gateway:
         aliases:
           - dataservice
@@ -71,3 +75,4 @@ networks:
   gateway:
   usernet:
   datanet:
+  authnet:
