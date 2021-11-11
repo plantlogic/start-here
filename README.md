@@ -21,12 +21,12 @@ PlantLogic is composed of 3 Dockerized microservices:
 
 The Frontend service is built using the Angular web application framework and, as the name suggest, serves the front-end to the client as a single page application which utilizes Angular routing. The User and Data services are built using Java Spring Boot and manage MongoDB database operations and access for user data and non-user data respectively.
 
-This repo is where setup info with Docker Compose and NGINX (or another gateway) will be stored.
+This repo is where setup info with Docker Compose and NGINX (or another gateway) is stored.
 
 </br>
 
 ## **Installation**
-To setup, [clone](x-github-client://openRepo/https://github.com/plantlogic/start-here) or [download](https://github.com/plantlogic/start-here/archive/master.zip) this repo. Then, copy the `docker-compose.example.yml` file to `docker-compose.yml` and edit the appropriate environment variables for the `frontend`, `userservice`, and `dataservice` containers. More detail on each of these environment variables can be found in the README of the repo for each service (see the table above).
+To setup, [clone](x-github-client://openRepo/https://github.com/plantlogic/start-here) or [download](https://github.com/plantlogic/start-here/archive/master.zip) this repo. Then, copy or rename the `docker-compose.example.yml` file to `docker-compose.yml` and edit the appropriate environment variables for the `frontend`, `userservice`, and `dataservice` containers. More detail on each of these environment variables can be found in the README of the repo for each service (see the table above).
 
 ![Example Homepage](https://user-images.githubusercontent.com/420820/59152014-6409d380-89f1-11e9-8e0b-6d276dfb3bd2.png)
 Example Homepage
